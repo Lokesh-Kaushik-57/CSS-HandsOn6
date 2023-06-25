@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(244, 244, 109);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container{
+    display: grid;
+    margin-left: 25%;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px 120px;
+    column-gap: 50px;
+    row-gap: 80px;
+}
+
+.box1{
+    background-color: rgb(8, 117, 100);
+    animation-name: row1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.box2{
+    background-color: rgb(145, 128, 161);
+    animation-name: row2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.box3{
+    background-color: rgb(8, 117, 100);
+    animation-name: row3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.box4a{
+    border: 4px solid rgb(1, 86, 73);
+    background-color: rgb(8, 117, 100);
+    animation-name: row4a;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.box4b{
+    border: 4px solid rgb(102, 35, 35);
+    background-color: rgb(131, 47, 47);
+    animation-name: row4b;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.box4c{
+    border: 4px solid rgb(57, 98, 57);
+    background-color: rgb(88, 148, 88);
+    animation-name: row4c;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.box{
+    justify-self: end;
+    align-self: end;
+}
+
+@keyframes row1{
+    0% { transform: skewX(25deg); }
+    50% { transform: skewX(-25deg); }
+    100% { transform: skewX(25deg); }
+}
+
+@keyframes row2{
+    0% { transform: skew(15deg, 15deg); }
+    50% { transform: skew(-15deg, -15deg); }
+    100% { transform: skew(15deg, 15deg); }
+}
+
+@keyframes row3{
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes row4a{
+    0% {transform: scaleY(1);}
+    50% {transform: scaleY(0.5);}
+    100% {transform: scaleY(1);}
+}
+
+@keyframes row4b{
+    0% {transform: scaleX(1);}
+    50% {transform: scaleX(0.4);}
+    100% {transform: scaleX(1);}
+}
+
+@keyframes row4c{
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(90deg); }
+}
+
+.page2{
+    font-size: 32px;
+    text-align: center;
+    margin-left: 50px;
+}
